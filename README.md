@@ -1,0 +1,2 @@
+# ejercicioGIT
+curso fullstack
