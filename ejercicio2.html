@@ -1,0 +1,32 @@
+<script>
+    let inicio = ["a", "b", "c", 4, 100, 1, 7, true];
+    let soloNumeros = [];
+
+    function limpiarArray(inicio) {
+        inicio.forEach(elemento => {
+            if (typeof (elemento) === "number") {
+                soloNumeros.push(elemento);
+            }
+        });
+        return (soloNumeros);
+    }
+    function OrdenarArray(ArrayLimpio) {
+        let tamanio = ArrayLimpio.length;
+        for (let index = 0; index < tamanio; index++) {
+            let menor = index;
+            for (let contador = index + 1; contador < tamanio; contador++) {
+                if (ArrayLimpio[contador] < ArrayLimpio[menor]) {
+                    menor = contador;
+                }
+            }
+            if (menor !== index) {
+                let temporal = ArrayLimpio[index];
+                ArrayLimpio[index] = ArrayLimpio[menor];
+                ArrayLimpio[menor] = temporal;
+            }
+        }
+        return ArrayLimpio;
+    }
+    let ArrayLimpio = (limpiarArray(inicio));
+    console.log(OrdenarArray(ArrayLimpio))
+</script>

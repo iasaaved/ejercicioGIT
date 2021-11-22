@@ -1,0 +1,15 @@
+<script>
+    let numeroDeElementos = 10;
+        let resultadoFibonnaci = [0, 1];
+
+        function fibonnaciFunction(numeroDeElementos, resultadoFibonnaci) {
+            for (index = resultadoFibonnaci.length; index < numeroDeElementos; index++) {
+                let primerValor = resultadoFibonnaci[index - 2];
+                let segundoValor = resultadoFibonnaci[index - 1];
+                resultadoFibonnaci.push(primerValor + segundoValor);
+            }
+            return resultadoFibonnaci;
+        }
+        console.log(fibonnaciFunction(numeroDeElementos, resultadoFibonnaci));
+</script>
+
