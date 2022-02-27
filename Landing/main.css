@@ -121,23 +121,6 @@ button {
   background-image: linear-gradient(to bottom, #fff, #fff, #fff);
   border-radius: 10px;
 }
-.cardCharacteristicsGrid {
-  display: grid;
-  max-width: 600px;
-  margin: auto;
-  gap: 20px;
-}
-.cardCharacteristics {
-  text-align: center;
-  justify-self: center;
-  border-radius: 10px;
-  padding: 22px 5% !important;
-  box-shadow: 0 20px 15px 0 rgb(26 72 100 / 10%) !important;
-  width: 150px;
-}
-#buttonCards {
-  margin: 80px 0px 10px;
-}
 #imageLine {
   height: 280px;
   max-width: 775px;
@@ -169,27 +152,26 @@ button {
   border-radius: 52px;
   padding: 10px;
 }
-#iconOne{
+#iconOne {
   grid-column: 1;
   grid-row: 2;
 }
-#iconTwo{
+#iconTwo {
   grid-column: 3;
   grid-row: 2;
 }
-#iconThree{
+#iconThree {
   grid-column: 5;
   grid-row: 2;
 }
-#imageLine > .test{
+#imageLine > .test {
   text-align: center;
   border: solid 2px #2196f3;
   width: 100px;
   height: 100px;
   border-radius: 50px;
-  
 }
-#imageLine > .test > img{
+#imageLine > .test > img {
   width: 50px;
   padding: 26px;
 }
@@ -200,11 +182,44 @@ button {
   display: inline;
   margin: 53px 0px 53px 0px;
 }
+#imageLine > .labelImage {
+  grid-row: 3;
+}
 .boldStyle {
   font-weight: bolder;
 }
-#lastButtonCreateAccount {
-  margin-top: 50px;
+#imageLine [title="labelTwo"] {
+  grid-column: 3;
+}
+#imageLine [title="labelthree"] {
+  grid-column: 5;
+}
+#buttonImageLine {
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+#characteristicsGrid {
+  padding: 140px 0px;
+  background-image: url("images/Enmascarar\ grupo\ 259@3x.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+#characteristicsGrid > .cardCharacteristicsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 75%;
+  margin: auto;
+  gap: 20px;
+}
+.cardCharacteristics {
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 20px 15px 0 rgb(26 72 100 / 10%) !important;
+  width: 100%;
+}
+#buttonCards {
+  margin: 80px 0px 10px;
 }
 button:hover {
   color: blue;
