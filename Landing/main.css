@@ -21,12 +21,14 @@ button {
   padding: 15px 45px 11px 46px;
   object-fit: contain;
   box-shadow: 0 9px 12px 0 rgb(26 72 100 / 16%);
-  background-image: linear-gradient(to top, #007fff, #00b1ff -10%);
+  background-image: linear-gradient(0deg, #007fff 0%, #00b1ff 100%);
   color: #ffffff;
   border-width: 0;
   border-radius: 5px;
   font-size: 18px;
   background-color: #ffffff;
+  font-weight: bold;
+  height: 60px;
 }
 #logoVenn {
   display: block;
@@ -67,6 +69,7 @@ button {
 #mainCard > p {
   grid-row: 3;
   grid-column: 2 / -1;
+  line-height: 150%;
 }
 #mainCard > h3,
 #mainCard > h5,
@@ -77,6 +80,8 @@ button {
   grid-row: 2;
   grid-column: 2;
   margin: 0;
+  font-size: medium;
+  color: #3097ff;
 }
 .starGroup {
   grid-row: 2;
@@ -130,11 +135,11 @@ button {
   grid-template-rows: 100px 100px 100px;
 }
 #imageLine > .numbers {
-  width: 35px;
+  width: 50px;
   height: 35px;
   grid-row: 1;
   display: inline;
-  margin: 0 auto;
+  margin: auto;
 }
 #imageLine [title="two"] {
   grid-column: 3;
@@ -166,10 +171,14 @@ button {
 }
 #imageLine > .test {
   text-align: center;
-  border: solid 2px #2196f3;
+  border: solid 2px #1689ff;
   width: 100px;
   height: 100px;
-  border-radius: 50px;
+  border-radius: 100px;
+}
+img.icons:hover {
+  background-color: #1689ff;
+  border-radius: 100px;
 }
 #imageLine > .test > img {
   width: 50px;
@@ -184,6 +193,9 @@ button {
 }
 #imageLine > .labelImage {
   grid-row: 3;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
 }
 .boldStyle {
   font-weight: bolder;
@@ -234,21 +246,22 @@ button {
   margin-top: 0px;
 }
 #buttonCards {
-  margin: 80px 0px 10px;
+  margin: 165px 0px 40px;
 }
 #lastButtonCreateAccount {
   margin-top: 80px;
 }
 button:hover {
-  color: blue;
+  color: #1489ff;
   background: white;
+  border: solid 1px #1489ff;
 }
 
 #footerGrid {
   padding: 20px 0px;
   display: grid;
   grid-template-columns: 40% 10% 50%;
-  background-color: #0B7FF3;
+  background-color: #0b7ff3;
 }
 #initialRow {
   border-bottom: solid 1px #ffffff;
@@ -284,4 +297,8 @@ ul#horizontal-list li {
   display: inline;
   color: #ffffff;
   margin: 5%;
+}
+ul#horizontal-list {
+  text-align: right;
+  margin-right: 12%;
 }
